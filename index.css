@@ -11,10 +11,6 @@ body {
     background-color: #222;
   }
 
-span{
-    color: #1DBF73;
-    font-size: 40px;
-  }
 
 .logo{
     font-size: 50px;
@@ -36,28 +32,69 @@ span{
   transition: all 0.3s ease-in-out;
 }
 
+.nav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.nav a{
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+color: #1DBF73;
+font-weight: bold;
+}
 
 @media screen and (max-width:649px){
   .nav .container .nav-options{
     display: none;
   }
+
+  span{
+    color: #4858b1;
+    font-size: 40px;
+  }
+
  .fa-solid{
     display: flex;
     color: rgba(255, 255, 255, 0.226);
     font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #13ec87;
   }
 }
 
 @media  screen and (min-width:650px){
   .fa-solid{
     display: none;
+  } 
+
+  span{
+    color: #1DBF73;
+    font-size: 40px;
   }
 
-}
-@media  screen and (min-width:650px) {  
 .grid-container{
   display: grid;
   grid-template-columns: auto auto;
+}
+
+.hero p {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 }
  .container{
@@ -65,31 +102,27 @@ span{
     max-width: 1400px;
     padding: 0 4rem;
 }
-.nav ul{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-}
 
-.nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 7px 15px;
-    transition: all 0.3s ease-in-out;
+.About {
+  margin: 20px 0;
+  padding: 40px 60px;
+  color: whitesmoke;
 }
-
-.nav a:hover {
+.About-head #About-head{
+  text-decoration: underline;
   color: #1DBF73;
-  font-weight: bold;
 }
+.About .About-head h1{
+  text-align: center;
+  padding: 40px 60px 10px 60px;
+}
+
 
 .hero {
-    background-image: url('https://images.pexels.com/photos/14033186/pexels-photo-14033186.jpeg?cs=srgb&dl=pexels-obi-onyeador-14033186.jpg&fm=jpg');
+    background-image: url('https://images.pexels.com/photos/11279904/pexels-photo-11279904.jpeg?cs=srgb&dl=pexels-roger-brown-11279904.jpg&fm=jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -101,19 +134,14 @@ span{
     z-index: -2;
   }
   
-  
   .hero h1 {
     font-size: 46px;
     margin: -20px 0 20px;
   }
   
-  .hero p {
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
   
   .content h2,
-  .content h3 {
+  .content h3{
     font-size: 150%;
     margin: 20px 0;
     color: whitesmoke;
