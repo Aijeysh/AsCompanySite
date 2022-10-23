@@ -1,15 +1,14 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #222;
-    padding-bottom: 50px;
-    background-color: #222;
-  }
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  background-color: #222;
+}
 
 
 
@@ -17,19 +16,20 @@ body {
 /* Header of the site */
 
 
-.logo{
-    font-size: 50px;
-}
-.nav{
-    position: fixed;
-    background-color: #222;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all 0.3s ease-in-out;
+.logo {
+  font-size: 50px;
 }
 
-.nav .container{
+.nav {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.nav ul{
+.nav ul {
   display: flex;
   list-style-type: none;
   align-items: center;
@@ -45,7 +45,7 @@ body {
   margin-right: 20px;
 }
 
-.nav a{
+.nav a {
   color: #fff;
   text-decoration: none;
   padding: 7px 15px;
@@ -53,8 +53,8 @@ body {
 }
 
 .nav a:hover {
-color: #1DBF73;
-font-weight: bold;
+  color: #1DBF73;
+  font-weight: bold;
 }
 
 
@@ -63,7 +63,8 @@ font-weight: bold;
 /* Cover Photo Part*/
 
 
-.hero {
+.hero,
+.hero-product {
   background-image: url('https://images.pexels.com/photos/11279904/pexels-photo-11279904.jpeg?cs=srgb&dl=pexels-roger-brown-11279904.jpg&fm=jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,6 +80,7 @@ font-weight: bold;
   z-index: -2;
 }
 
+
 .hero h1 {
   font-size: 46px;
   margin: -20px 0 20px;
@@ -90,17 +92,17 @@ font-weight: bold;
 /* For Responsiveness*/
 
 
-@media screen and (max-width:649px){
-  .nav .container .nav-options{
+@media screen and (max-width:649px) {
+  .nav .container .nav-options {
     display: none;
   }
 
-  span{
+  span {
     color: #4858b1;
     font-size: 40px;
   }
 
- .fa-bars{
+  .fa-bars {
     display: flex;
     color: rgba(255, 255, 255, 0.226);
     font-size: 2rem;
@@ -112,38 +114,39 @@ font-weight: bold;
     letter-spacing: 1px;
     color: #13ec87;
   }
+
   .About .About-head h1,
-.About .About-head h2{
-  padding:10px 20px;
-}
+  .About .About-head h2 {
+    padding: 10px 20px;
+  }
 }
 
-@media  screen and (min-width:650px){
-  .fa-bars{
+@media screen and (min-width:650px) {
+  .fa-bars {
     display: none;
-  } 
+  }
 
-  span{
+  span {
     color: #1DBF73;
     font-size: 40px;
   }
 
-.grid-container{
-  display: grid;
-  grid-template-columns: auto auto;
-}
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
-.hero p {
-  font-size: 35px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
+  .hero p {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 
-.About .About-head h1,
-.About .About-head h2{
-  text-align: center;
-  padding: 40px 60px 10px 60px;
-}
+  .About .About-head h1,
+  .About .About-head h2 {
+    text-align: center;
+    padding: 40px 60px 10px 60px;
+  }
 }
 
 
@@ -152,10 +155,10 @@ font-weight: bold;
 /* About part*/
 
 
- .container{
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 4rem;
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 4rem;
 }
 
 .About {
@@ -163,75 +166,80 @@ font-weight: bold;
   padding: 40px 60px;
   color: whitesmoke;
 }
-.About-head #About-head{
+
+.About-head #About-head {
   text-decoration: underline;
   color: #1DBF73;
 }
 
 
-  
+
 
 /* About Reasons Part*/
 
 
-  .content h2,
-  .content h3{
-    font-size: 150%;
-    margin: 20px 0;
-    color: whitesmoke;
-  }
-  
-  .content p {
-    color: grey;
-    line-height: 30px;
-    letter-spacing: 1.2px;
-  }
+.content h2,
+.content h3,
+.grid-container .products h1 {
+  font-size: 150%;
+  margin: 20px 0;
+  color: whitesmoke;
+}
 
-
-
-
-  /* Services Part*/
-
-
-  .services{
-    padding: 40px 20px;
-  }
-
-
-  .services-head h1{
-    color: whitesmoke;
-    text-align: center;
-  }
-
-  .services .grid-container{
-    padding: 40px 0;
-  }
-
-  .services a,
-  .services .fa-arrow-right{
-    font-size: large;
-    color: #4858b1;
-  }
-
-
-
-
-   /* Contact Page*/
-  
-.contact-head{
-text-align: center;
-color: white;
+.content p,
+.grid-container .products p {
+  color: grey;
+  line-height: 30px;
+  letter-spacing: 1.2px;
 }
 
 
 
-.contact-text{
+
+/* Services Part*/
+
+
+.services {
+  padding: 40px 20px;
+}
+
+
+.services-head h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.services .grid-container {
+  padding: 40px 0;
+}
+
+.services a,
+.services .fa-arrow-right {
+  font-size: large;
+  color: #4858b1;
+}
+
+
+
+
+/* Contact Page*/
+
+
+.contact-head {
+  text-align: center;
+  color: white;
+}
+
+
+
+.contact-text {
   text-align: center;
   font-size: larger;
   font-style: italic;
   color: rgb(17, 155, 79);
 }
-.contact-form-texts{
+
+.contact-form-texts {
   margin-top: 10px;
   text-align: center;
   letter-spacing: 3px;
@@ -240,13 +248,19 @@ color: white;
   color: #1DBF73;
 }
 
-.contact-form{
-text-align: center;
+.contact-form-texts #contact-options {
+  margin-top: 10px;
+}
+
+.contact-form {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 
-#fname, #email,
-#subject{
+#fname,
+#email,
+#subject {
   padding: 10px;
   border-radius: 12px;
   border-style: double;
@@ -255,7 +269,7 @@ text-align: center;
   margin-bottom: 20px;
 }
 
-textarea{
+textarea {
   width: 70%;
   padding: 12px;
   border: 3px solid #ccc;
@@ -267,7 +281,7 @@ textarea{
   height: 100px;
 }
 
-.button{
+.button {
   border-radius: 12px;
   border-style: double;
   background: rgb(98, 98, 168);
@@ -276,4 +290,29 @@ textarea{
   flex: auto;
   border-color: rgb(246, 248, 250);
 }
-  
+
+
+
+
+
+/* Footer Section*/
+
+
+.container-lastsection {
+  text-align: center;
+  background-color: grey;
+  margin: 20px 0;
+  padding: 30px 0;
+  letter-spacing: 10px;
+  border-radius: 12px;
+}
+
+
+
+
+/* Products Cover */
+
+
+.hero-product {
+  background-image: url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?cs=srgb&dl=pexels-rodnae-productions-8370752.jpg&fm=jpg');
+}
