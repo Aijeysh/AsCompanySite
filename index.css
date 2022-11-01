@@ -6,7 +6,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #222;
   background-color: #222;
 }
 
@@ -65,10 +64,10 @@ body {
 
 .hero,
 .hero-product {
-  background-image: url('https://images.pexels.com/photos/11279904/pexels-photo-11279904.jpeg?cs=srgb&dl=pexels-roger-brown-11279904.jpg&fm=jpg');
+  /* background-image: url('');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   height: 100vh;
   color: #fff;
   display: flex;
@@ -89,6 +88,7 @@ body {
 
 
 
+
 /* For Responsiveness*/
 
 
@@ -102,7 +102,7 @@ body {
     font-size: 40px;
   }
 
-  .fa-bars {
+  i.fa-solid {
     display: flex;
     color: rgba(255, 255, 255, 0.226);
     font-size: 2rem;
@@ -122,9 +122,11 @@ body {
 }
 
 @media screen and (min-width:650px) {
-  .fa-bars {
+
+  i.fa-solid{
     display: none;
   }
+
 
   span {
     color: #1DBF73;
@@ -308,11 +310,3 @@ textarea {
 }
 
 
-
-
-/* Products Cover */
-
-
-.hero-product {
-  background-image: url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?cs=srgb&dl=pexels-rodnae-productions-8370752.jpg&fm=jpg');
-}
